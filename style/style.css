@@ -1,0 +1,213 @@
+/* Основной цвет фона #E5E5E5; */
+/* Вторичный цвет фона #F5F4FA; */
+/* Акцент #2196F3; */
+/* Основной цвет текста #757575;*/
+/* Вторичный цвет текста #212121; */
+/* Белый цвет #FFFFFF; */
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #FFFFFF;
+    --secondary-bg-color: #F5F4FA;
+    --third-bg-color: #2F303A;
+    --transparent-white-color: rgba(255, 255, 255, 0.6);
+}
+
+.page {
+    background-color: var(--primary-bg-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+}
+
+
+/* header */
+.logo {
+    color: var(--accent-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    text-decoration: none;
+}
+
+.black-logo {
+    color: var(--title-text-color);
+}
+
+.site-nav,
+.nav-contacts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    list-style: none;
+}
+
+.nav-link {
+    color:var(--title-text-color);
+    letter-spacing: 0.02em;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus,
+.footer-link:hover,
+.footer-link:focus {
+    color: var(--accent-color);
+}
+
+.active {
+    color: var(--accent-color);
+}
+
+/* hero */
+.hero {
+    background-color: var(--third-bg-color);
+    color: var(--primary-bg-color);
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    font-weight: 700;
+    line-height: 1.8;
+    align-items: center;
+    text-align: center;
+    font-family: inherit;
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+/* features and what we do*/
+.features-list,
+.examples-list,
+.members-list,
+.footer-contacts {
+    list-style: none;
+}
+
+.features-title {
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--title-text-color);
+    font-size: 14px;
+}
+
+.features-item {
+    line-height: 1.71;
+    font-size: 14px;
+}
+
+/* what we do */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+}
+
+/* team */
+.team-members {
+    background-color: var(--secondary-bg-color);
+}
+
+.member-card {
+    background-color: var(--primary-bg-color);
+}
+
+.members-name,
+.members-position {
+    line-height: 1.18;
+    text-align: center;
+}
+
+.members-name {
+    font-weight: 500;
+    color: var(--title-text-color);
+}
+
+/* footer */
+.white-logo {
+    color: var(--primary-bg-color);
+}
+
+.page-footer {
+    font-size: 14px;
+    line-height: 1.71;
+    background-color: var(--third-bg-color);
+}
+
+ .address-item {   
+    color:var(--primary-bg-color);
+    font-style: normal;
+ }
+ 
+.footer-link {
+    color: var(--transparent-white-color);
+    text-decoration: none;
+}
+
+/* portfolio */
+ .filter-button {
+    background-color: var(--secondary-bg-color);
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    cursor: pointer;
+    font-family: inherit;
+    border: none;
+    border-radius: 4px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+}
+
+.filter-active {
+    background-color: var(--accent-color);
+    color: var(--secondary-bg-color);
+}
+
+.filter-list,
+.projects-list {
+    list-style: none;
+}
+
+.project-name {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-text-color);
+}
+
+.work-type {
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color:var(--primary-text-color);
+}
