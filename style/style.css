@@ -13,6 +13,21 @@
     --secondary-bg-color: #F5F4FA;
     --third-bg-color: #2F303A;
     --transparent-white-color: rgba(255, 255, 255, 0.6);
+    --box-shadow-card: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    --box-shadow-filter: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+    display: block;
 }
 
 .page {
@@ -23,10 +38,29 @@
     letter-spacing: 0.03em;
 }
 
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* header */
+.page-header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
+    margin-right: 93px;
+
     color: var(--accent-color);
+
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -40,22 +74,42 @@
 
 .site-nav,
 .nav-contacts {
+    display: flex;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     list-style: none;
 }
 
+.nav-contacts {
+    margin-left: auto;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
 .nav-link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color:var(--title-text-color);
+
     letter-spacing: 0.02em;
     font-size: 14px;
     text-decoration: none;
 }
 
 .contact-link {
-    text-decoration: none;
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     color: var(--primary-text-color);
+
+    text-decoration: none;
 }
 
 .nav-link:hover,
@@ -73,13 +127,21 @@
 
 /* hero */
 .hero {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 200px 452px 280px;
+
     background-color: var(--third-bg-color);
     color: var(--primary-bg-color);
-    text-align: center;
+
     letter-spacing: 0.06em;
+    height: 600px;
 }
 
 .main-title {
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -87,16 +149,20 @@
 }
 
 .hero-button {
-    font-weight: 700;
-    line-height: 1.8;
-    align-items: center;
-    text-align: center;
-    font-family: inherit;
-    background-color: var(--accent-color);
-    color: var(--primary-bg-color);
-    cursor: pointer;
+    display: inline-block;
+    padding: 10px 32px;
     border: none;
     border-radius: 4px;
+    min-width: 216px;
+    align-items: center;
+
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+
+    font-weight: 700;
+    line-height: 1.8;
+    font-family: inherit;
+    cursor: pointer;
 }
 
 /* features and what we do*/
@@ -107,7 +173,23 @@
     list-style: none;
 }
 
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.features-list {
+    display: flex;
+    justify-content:space-between;
+}
+
+.features-paragraph {
+    width: 270px;
+}
+
 .features-title {
+    margin-bottom: 10px;
+
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
@@ -118,24 +200,47 @@
 .features-item {
     line-height: 1.71;
     font-size: 14px;
+    letter-spacing: 0.03em;`
 }
 
 /* what we do */
+.work-examples {
+    padding-top: 0;
+}
+
+.examples-list {
+    display: flex;
+    justify-content:space-between;
+}
+
 .section-title {
+    margin-bottom: 50px;
+
+    color: var(--title-text-color);
+
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
     text-align: center;
-    color: var(--title-text-color);
 }
 
 /* team */
 .team-members {
+    text-align: center;
+
     background-color: var(--secondary-bg-color);
+}
+
+.members-list {
+    display: flex;
+    justify-content:space-between;
 }
 
 .member-card {
     background-color: var(--primary-bg-color);
+    box-shadow: var(--box-shadow-card);
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .members-name,
@@ -145,9 +250,16 @@
 }
 
 .members-name {
+    margin-top: 30px;
+    margin-bottom: 10px;
     font-weight: 500;
     color: var(--title-text-color);
 }
+
+.members-position {
+    padding-bottom: 30px;
+}
+
 
 /* footer */
 .white-logo {
@@ -155,30 +267,60 @@
 }
 
 .page-footer {
+    margin-left: auto;
+    margin-right: auto;
+
     font-size: 14px;
     line-height: 1.71;
     background-color: var(--third-bg-color);
 }
 
- .address-item {   
+ .address-item {  
+    display: block; 
+    
     color:var(--primary-bg-color);
     font-style: normal;
  }
  
 .footer-link {
+
+    display: block;
     color: var(--transparent-white-color);
     text-decoration: none;
+    margin-top: 9px; 
+}
+
+.logo-footer {
+    display: block;
+    padding-top: 60px;
+    margin-bottom: 20px; 
+   
+    width: 145px;
+}
+
+.address-item {
+    display: block;
+    padding-bottom: 60px;
+    width: 231px;
+
+    letter-spacing: 0.03em;
 }
 
 /* portfolio */
  .filter-button {
+    display: inline-block;
+    padding: 6px 22px;
+    min-width: 73px;
+    align-items: center;
+
     background-color: var(--secondary-bg-color);
+
     font-weight: 500;
     line-height: 1.62;
-    text-align: center;
     cursor: pointer;
     font-family: inherit;
     border: none;
+    box-shadow: var(--box-shadow-filter);
     border-radius: 4px;
 }
 
@@ -193,9 +335,25 @@
     color: var(--secondary-bg-color);
 }
 
+.filter-list {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+
+.filter-item:not(:last-child) {
+    margin-left: 8px;
+}
+
 .filter-list,
 .projects-list {
     list-style: none;
+}
+
+/* Project examples */
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-name {
@@ -203,11 +361,30 @@
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
     color: var(--title-text-color);
 }
 
 .work-type {
     line-height: 1.87;
     letter-spacing: 0.03em;
+
     color:var(--primary-text-color);
+}
+
+.project-item {
+    width: 370px;
+    border: 1px solid #EEEEEE;
+}
+
+.project-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.project-item:not(:nth-child(n+7)) {
+    margin-bottom: 30px;
+}
+
+.card-content {
+    padding: 20px 24px;
 }
