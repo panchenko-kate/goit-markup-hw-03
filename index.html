@@ -9,28 +9,39 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./style/style.css" />
   </head>
   <body class="page">
     <header class="page-header">
-      <div class="container main-nav">     
-        <a href="./index.html" class="logo link">Web<span class="black-logo">Studio</span></a>
+      <div class="container main-nav">
+        <a href="./index.html" class="logo link first-logo"
+          >Web<span class="black-logo">Studio</span></a
+        >
         <nav>
           <ul class="site-nav">
-            <li class="nav-item"><a href="./index.html" class="nav-link active">Studio</a></li>
-            <li class="nav-item"><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="nav-link">Portfolio</a>
+            </li>
             <li class="nav-item"><a href="#" class="nav-link">Contacts</a></li>
           </ul>
-        </nav>    
+        </nav>
         <ul class="nav-contacts">
-          <li  class="nav-item">
+          <li class="nav-item">
             <a href="mailto:info@devstudio.com" class="contact-link"
               >info@devstudio.com</a
             >
-          </li  class="nav-item">
-          <li>
-            <a href="tel:+380961111111" class="contact-link">+38 096 111 11 11</a>
+          </li>
+          <li class="nav-item">
+            <a href="tel:+380961111111" class="contact-link"
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
       </div>
@@ -39,12 +50,14 @@
     <main>
       <!-- Hero -->
       <section class="hero">
-        <h1 class="main-title">EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
-        <button type="button" class="hero-button">Request our service</button>
+        <div class="container hero-container">
+          <h1 class="main-title">Effective solutions for your business</h1>
+          <button type="button" class="hero-button">Request our service</button>
+        </div>
       </section>
       <!-- Features -->
-      <div class="container">
-        <section class="features section">
+      <section class="features section">
+        <div class="container">
           <h2 hidden>Features</h2>
           <ul class="features-list">
             <li class="features-paragraph">
@@ -76,8 +89,8 @@
               </p>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
       <!-- Work examples -->
       <section class="work-examples section">
         <div class="container">
@@ -109,65 +122,80 @@
       </section>
       <!-- Team members -->
       <section class="team-members section">
-          <div class="container">
-            <h2 class="section-title">Our Team</h2>
-            <ul class="members-list">
-              <li class="member-card">
-                <img
-                  src="./images/team/member1.jpg"
-                  alt="Product Designer"
-                  width="270"
-                />
-              <h3 class="members-name" lang="ru">Игорь Демьяненко</h3>
+        <div class="container">
+          <h2 class="section-title">Our Team</h2>
+          <ul class="members-list">
+            <li class="member-card">
+              <img
+                src="./images/team/member1.jpg"
+                alt="Product Designer"
+                width="270"
+              />
+              <div class="team-container">
+                <h3 class="members-name" lang="ru">Игорь Демьяненко</h3>
                 <p class="members-position">Product Designer</p>
-              </li>
-              <li class="member-card">
-                <img
-                  src="./images/team/member2.jpg"
-                  alt="Frontend Developer"
-                  width="270"
-                />
+              </div>
+            </li>
+            <li class="member-card">
+              <img
+                src="./images/team/member2.jpg"
+                alt="Frontend Developer"
+                width="270"
+              />
+              <div class="team-container">
                 <h3 class="members-name" lang="ru">Ольга Репина</h3>
                 <p class="members-position">Frontend Developer</p>
-              </li>
-              <li class="member-card">
-                <img src="./images/team/member3.jpg" alt="Marketing" width="270" />
+              </div>
+            </li>
+            <li class="member-card">
+              <img
+                src="./images/team/member3.jpg"
+                alt="Marketing"
+                width="270"
+              />
+              <div class="team-container">
                 <h3 class="members-name" lang="ru">Николай Тарасов</h3>
                 <p class="members-position">Marketing</p>
-              </li>
-              <li class="member-card">
-                <img
-                  src="./images/team/member4.jpg"
-                  alt="UI Designer"
-                  width="270"
-                />
+              </div>
+            </li>
+            <li class="member-card">
+              <img
+                src="./images/team/member4.jpg"
+                alt="UI Designer"
+                width="270"
+              />
+              <div class="team-container">
                 <h3 class="members-name" lang="ru">Михаил Ермаков</h3>
                 <p class="members-position">UI Designer</p>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
+        </div>
       </section>
     </main>
 
     <footer class="page-footer">
       <div class="container">
-        <a href="./index.html" class="logo link logo-footer">Web<span class="white-logo">Studio</span></a>
-        <address class="address-item">
-          <p>
-            695 Park Ave, New York, NY 10065,
-            United States
-          </p>
-          <ul class="footer-contacts contacts">
-            <li>
-              <a href="mailto:info@example.com" class="footer-link"
-                >info@example.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+12127724150" class="footer-link">+1 212-772-4150</a>
-            </li>
-          </ul>
-        </address>
+        <a href="./index.html" class="logo link logo-footer"
+          >Web<span class="white-logo">Studio</span></a
+        >
+        <div class="footer-container">
+          <address class="address-item">
+            <p>695 Park Ave, New York, NY 10065, United States</p>
+            <ul class="footer-contacts contacts">
+              <li>
+                <a href="mailto:info@example.com" class="footer-link"
+                  >info@example.com</a
+                >
+              </li>
+              <li>
+                <a href="tel:+12127724150" class="footer-link"
+                  >+1 212-772-4150</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
       </div>
     </footer>
   </body>
