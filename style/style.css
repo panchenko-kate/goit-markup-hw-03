@@ -302,10 +302,17 @@ img {
  }
  
 .footer-link {
-    display: block;
     color: var(--transparent-white-color);
+
     text-decoration: none;
-    margin-top: 9px; 
+}
+
+.contacts-list:first-child {
+    margin-bottom: 9px;
+ }
+
+.address-street {
+    margin-bottom:9px;
 }
 
 .logo-footer {
