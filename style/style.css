@@ -97,6 +97,11 @@ img {
     margin-left: 93px;
 }
 
+
+.nav-contacts-item:not(:first-child) {
+    margin-left: 50px;
+}
+
 .nav-link {
     display: block;
     padding-top: 32px;
